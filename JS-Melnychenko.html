@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Family</title>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<h2 class="text-center">Constructor of family</h2><br /><br />
+
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="Images/Add.png" class="img-thumbnail" alt="Add a member" />
+			<h4>Add a member</h4>
+			<p>This button allows to add a new user<br />with some properties.</p>
+			<p><a class="btn btn-primary" id="add" onclick="addMember()" role="button">Add a member</a></p>
+		</div>
+
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="Images/Delete.jpg" class="img-thumbnail" alt="Delete a member" />
+			<h4>Delete a member</h4>
+			<p>This button allows to delete selected<br />user if he exists</p>
+			<p><a class="btn btn-danger" onclick="deleteMember()" role="button">Delete a member</a></p>
+		</div>
+
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="Images/Set.png" class="img-thumbnail" alt="Set an action" />
+			<h4>Go to the restaurant</h4>
+			<p>This button allows to know if a user<br />has enough money to eat something.</p>
+			<p><a class="btn btn-success" onclick="setAction()" role="button">Go to the restaurant</a></p>
+		</div>
+
+		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<img src="Images/Show.jpg" class="img-thumbnail" alt="Show a memeber" />
+			<h4>Show all family</h4>
+			<p>This button allows to show all family<br />with her properties.</p>
+			<p><a class="btn btn-info" onclick="showAllFamily()" role="button">Show all family</a></p>
+		</div>
+	</div>
+</div>
+
+<br /><br />
+<div class="container" >
+	<div class="row">
+		<div id="myFamily" class="text-left"></div><br />
+		<div id="error" class="text-left"></div>
+	</div>
+</div>
+
+<script src="js/check.js"></script>
+
+</body>
+</html>
